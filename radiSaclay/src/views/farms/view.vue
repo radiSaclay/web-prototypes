@@ -7,10 +7,10 @@
       <p v-if="farm.phone">Tel : {{ farm.phone }}</p>
       <p v-if="farm.email">Mail : {{ farm.email }}</p>
     </div>
-    <div class="content-padded">
+    <!-- <div class="content-padded">
       <button v-if="!farm.subscribed" @click.prevent="toggleFarmSubscription(farm.id)" class="btn btn-positive btn-block">Suivre</button>
       <button v-else @click.prevent="toggleFarmSubscription(farm.id)" class="btn btn-outlined btn-block">Ne plus suivre</button>
-    </div>
+    </div> -->
     <ul class="table-view">
       <li class="table-view-cell media" v-for="ev in events">
         <event-item :event="ev"></event-item>
